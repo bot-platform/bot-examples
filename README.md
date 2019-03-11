@@ -14,7 +14,7 @@ Bot Platform API overview
 * Bot should be compatible with one endpoint.
 * If Platform received invalid response from bot it ends game with defeat for this bot.
 
-## Events
+### Events
 
 | Name                                    | Description                                         |
 |-----------------------------------------|-----------------------------------------------------|
@@ -23,20 +23,6 @@ Bot Platform API overview
 | [hit_result](#event-hit_result)         | Triggered when BP processes last hit of this bot.   |
 | [game_finished](#event-game_finished)   | Triggered when BP finishes the game.                |
 | [ping](#event-ping)                     | Triggered when BP checks bot's server availability. |
-
-#### Event request example:
-```json
-URL: http://bot-address/hook
-Method: POST
-Body:
-{
-    "event":"new_game",
-    "payload":{
-        "id":"5c74eba44651f70001d12d31",
-        "test":true
-    }
-}
-```
 
 ### Event `new_game`:
 
@@ -86,3 +72,17 @@ Body:
 
 ### Event `ping`:
 // TODO
+
+### Event request example:
+```json
+URL: http://bot-address/hook
+Method: POST
+Body:
+{
+    "event":"new_game",
+    "payload":{
+        "id":"5c74eba44651f70001d12d31",
+        "test":true
+    }
+}
+```
