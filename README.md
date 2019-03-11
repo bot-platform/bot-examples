@@ -1,4 +1,4 @@
-Bot Platform API overview
+Bot Platform (BP) API overview
 =========================
 
 ## Contents
@@ -12,7 +12,7 @@ Bot Platform API overview
 - [Event request example](#event-request-example)
 
 ### Commom terms:
-* Bot represents single endpoint (hook) to process events from the Bot Platform.
+* Bot represents single endpoint (hook) to process events from the BP.
 * Max allowed time to process event is *1 second*. Otherwise BP automatically finishes current game in favor of the enemy.
 * If BP receives invalid reply this one automatically finishes current game in favor of the enemy.
 
@@ -21,8 +21,8 @@ Bot Platform API overview
 | Name                                    | Description                                         |
 |-----------------------------------------|-----------------------------------------------------|
 | [new_game](#event-new_game)             | Triggered when BP creates new game with this bot.   |
-| [next_turn](#event-next_turn)             | Triggered when BP switched the move to this bot.    |
-| [turn_result](#event-turn_result)         | Triggered when BP processes last turn of this bot.   |
+| [next_turn](#event-next_turn)           | Triggered when BP switched the move to this bot.    |
+| [turn_result](#event-turn_result)       | Triggered when BP processes last turn of this bot.  |
 | [game_finished](#event-game_finished)   | Triggered when BP finishes the game.                |
 | [ping](#event-ping)                     | Triggered when BP checks bot's server availability. |
 
