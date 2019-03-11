@@ -5,8 +5,8 @@ Bot Platform API overview
 - [Common rules](#common-rules)
 - [Events](#events)
   - [New game](#event-new_game)
-  - [Your hit](#event-your_hit)
-  - [Hit result](#event-hit-result)
+  - [Next turn](#event-next_turn)
+  - [Turn result](#event-turn-result)
   - [Game finished](#event-game_finished)
   - [Ping](#event-ping)
 - [Event request example](#event-request-example)
@@ -20,8 +20,8 @@ Bot Platform API overview
 | Name                                    | Description                                         |
 |-----------------------------------------|-----------------------------------------------------|
 | [new_game](#event-new_game)             | Triggered when BP creates new game with this bot.   |
-| [your_hit](#event-your_hit)             | Triggered when BP switched the move to this bot.    |
-| [hit_result](#event-hit_result)         | Triggered when BP processes last hit of this bot.   |
+| [next_turn](#event-next_turn)             | Triggered when BP switched the move to this bot.    |
+| [turn_result](#event-turn_result)         | Triggered when BP processes last turn of this bot.   |
 | [game_finished](#event-game_finished)   | Triggered when BP finishes the game.                |
 | [ping](#event-ping)                     | Triggered when BP checks bot's server availability. |
 
@@ -62,10 +62,10 @@ Bot Platform API overview
 ]
 ```
 
-#### Event `your_hit`:
+#### Event `next_turn`:
 // TODO
 
-#### Event `hit_result`:
+#### Event `turn_result`:
 // TODO
 
 #### Event `game_finished`:
