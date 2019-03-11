@@ -25,15 +25,15 @@ Bot Platform API overview
 | [game_finished](#event-game_finished)   | Triggered when BP finishes the game.                |
 | [ping](#event-ping)                     | Triggered when BP checks bot's server availability. |
 
-### Event `new_game`:
+#### Event `new_game`:
 
-#### Payload:
+##### Payload:
 | Key  | Type    | Description                                           |
 |------|---------|-------------------------------------------------------|
 | id   | string  | Unique identificator of created game.                 |
 | test | boolean | Indicates that game was created for testing purposes. |
 
-#### Example:
+##### Example:
 ```json
 {
     "id": "5c74eba44651f70001d12d31",
@@ -41,12 +41,12 @@ Bot Platform API overview
 }
 ```
 
-#### Reply:
+##### Reply:
 | Key  | Type    | Description                                           |
 |------|---------|-------------------------------------------------------|
 | -    | array   | Generated board for this game.                        |
 
-#### Example:
+##### Example:
 ```json
 [
     [0, 0, 0, 0, 1, 0, 1, 0, 0, 0],
@@ -62,16 +62,16 @@ Bot Platform API overview
 ]
 ```
 
-### Event `your_hit`:
+#### Event `your_hit`:
 // TODO
 
-### Event `hit_result`:
+#### Event `hit_result`:
 // TODO
 
-### Event `game_finished`:
+#### Event `game_finished`:
 // TODO
 
-### Event `ping`:
+#### Event `ping`:
 // TODO
 
 ### Event request example:
