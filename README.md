@@ -1,5 +1,7 @@
-Bot Platform (BP) API overview
+Bot Platform (BP) overview
 =========================
+
+> Bot Platform (*BP*) represents system where user can add own Bot (link will be here) which implements logic for all events described below. It gives possibility to take a part in tournoments with other bots.
 
 ## Contents
 - [Common terms](#common-terms)
