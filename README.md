@@ -26,8 +26,8 @@ Bot Platform API overview
 
 #### Event request example:
 ```json
+URL: http://bot-address/hook
 Method: POST
-Uri: http://bot-address/hook
 Body:
 {
     "event":"new_game",
