@@ -9,6 +9,7 @@ Bot Platform API overview
   - [Hit result](#event-hit-result)
   - [Game finished](#event-game_finished)
   - [Ping](#event-ping)
+- [Event request example](#event-request-example)
 
 ### Commom rules:
 * Bot should be compatible with one endpoint.
