@@ -26,7 +26,16 @@ Bot Platform API overview
 
 #### Event request example:
 ```json
-POST {"event": "new_game", "payload": {"id": "5c74eba44651f70001d12d31", "test": true}} http://bot-address/hook
+Method: POST
+Uri: http://bot-address/hook
+Body:
+{
+    "event":"new_game",
+    "payload":{
+        "id":"5c74eba44651f70001d12d31",
+        "test":true
+    }
+}
 ```
 
 ### Event `new_game`:
