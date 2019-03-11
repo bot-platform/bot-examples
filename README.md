@@ -2,7 +2,7 @@ Bot Platform API overview
 =========================
 
 ## Contents
-- [Common rules](#common-rules)
+- [Common terms](#common-terms)
 - [Events](#events)
   - [New game](#event-new_game)
   - [Next turn](#event-next_turn)
@@ -11,9 +11,10 @@ Bot Platform API overview
   - [Ping](#event-ping)
 - [Event request example](#event-request-example)
 
-### Commom rules:
-* Bot should be compatible with one endpoint.
-* If Platform received invalid response from bot it ends game with defeat for this bot.
+### Commom terms:
+* Bot represents single endpoint (hook) to process events from the Bot Platform.
+* Max allowed time to process event is *1 second*. Otherwise BP automatically finishes current game in favor of the enemy.
+* If BP receives invalid reply this one automatically finishes current game in favor of the enemy.
 
 ### Events
 
