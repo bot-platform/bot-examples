@@ -8,7 +8,7 @@ Bot Platform (BP) overview
 - [Events](#events)
   - [New game](#event-new_game)
   - [Next turn](#event-next_turn)
-  - [Turn result](#event-turn-result)
+  - [Turn result](#event-turn_result)
   - [Game finished](#event-game_finished)
   - [Ping](#event-ping)
 - [Event request example](#event-request-example)
