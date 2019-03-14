@@ -5,12 +5,11 @@ Bot Platform (BP) overview
 
 ## Contents
 - [Common terms](#common-terms)
-- [Events](#events)
+- [Game events](#game-events)
   - [New game](#event-new_game)
   - [Next turn](#event-next_turn)
   - [Turn result](#event-turn_result)
   - [Game finished](#event-game_finished)
-  - [Ping](#event-ping)
 - [Event request example](#event-request-example)
 
 ### Commom terms:
@@ -18,11 +17,11 @@ Bot Platform (BP) overview
 * Max allowed time to process event is *1 second*. Otherwise BP automatically finishes current game in favor of the enemy.
 * If BP receives invalid reply this one automatically finishes current game in favor of the enemy.
 
-### Endpoints:
+### Bot endpoints:
 * POST /hook (process events)
 * GET /health (check bot's accessibility)
 
-### Events
+### Game events
 
 | Name                                    | Description                                         |
 |-----------------------------------------|-----------------------------------------------------|
@@ -30,7 +29,6 @@ Bot Platform (BP) overview
 | [next_turn](#event-next_turn)           | Triggered when BP switched the move to this bot.    |
 | [turn_result](#event-turn_result)       | Triggered when BP processes last turn of this bot.  |
 | [game_finished](#event-game_finished)   | Triggered when BP finishes the game.                |
-| [ping](#event-ping)                     | Triggered when BP checks bot's server availability. |
 
 #### Event `new_game`:
 
@@ -76,9 +74,6 @@ Bot Platform (BP) overview
 // TODO
 
 #### Event `game_finished`:
-// TODO
-
-#### Event `ping`:
 // TODO
 
 ### Event request example:
