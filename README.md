@@ -18,6 +18,10 @@ Bot Platform (BP) overview
 * Max allowed time to process event is *1 second*. Otherwise BP automatically finishes current game in favor of the enemy.
 * If BP receives invalid reply this one automatically finishes current game in favor of the enemy.
 
+### Endpoints:
+* POST /hook (process events)
+* GET /health (check bot's accessibility)
+
 ### Events
 
 | Name                                    | Description                                         |
